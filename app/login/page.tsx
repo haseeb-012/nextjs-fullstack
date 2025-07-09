@@ -2,6 +2,7 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import Header from "../compoents/Header";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -25,6 +26,8 @@ function LoginPage() {
   };
 
   return (
+    <>
+    <Header />
     <div className="flex min-h-screen items-center justify-center bg-black">
       <div className="w-full max-w-md bg-gray-900 rounded-lg shadow-lg p-8">
         <h1 className="text-2xl font-bold mb-6 text-center text-white">
@@ -61,6 +64,8 @@ function LoginPage() {
         </div>
       </div>
     </div>
+    </>
+    
   );
 }
 
