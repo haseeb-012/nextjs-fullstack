@@ -34,7 +34,7 @@ export default  function Home() {
       {/* Main content */}
       <main className="flex flex-col items-center w-full max-w-2xl flex-1 mt-8">
         <h1 className="text-3xl font-bold text-white mb-2 text-center">
-          Welcome to Your Video Platform
+          Welcome to Your Video App
         </h1>
       
 
